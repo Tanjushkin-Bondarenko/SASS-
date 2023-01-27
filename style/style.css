@@ -348,6 +348,32 @@ article #world-stricle {
   font-weight: bold;
 }
 
+nav {
+  justify-content: flex-end;
+  width: 300px;
+  padding: 5px 0 5px 0;
+}
+nav .topic_current_new {
+  font-size: 22px;
+  color: #161e55;
+}
+nav .topic_current_new:hover {
+  cursor: pointer;
+  color: rgb(33, 45, 125);
+}
+nav .type_news {
+  color: #111740;
+  font-variant: small-caps;
+  font-size: 17px;
+}
+nav .foto {
+  width: 300px;
+  height: auto;
+}
+nav .foto:hover {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
 }
