@@ -1,0 +1,29 @@
+aside {
+    width: 400px;
+
+    @for $i from 1 to 4 {
+        .aside_topic#{$i} {
+            text-align: start;
+            font-size: calc($font-size + 10px);
+            color: darken($color2, $amount: 10%);
+            padding-bottom: calc($height /2);
+
+            &:hover {
+                cursor: pointer;
+                color: $color1;
+            }
+        }
+
+        .subtitle#{$i} {
+            padding-top: calc($height /2);
+            font-size: $font-size;
+            color: darken($color5, $amount: 30%);
+            font-variant: small-caps;
+        }
+
+        .aside_img#{$i} {
+            height: calc($width *5);
+            max-width: 450px;
+        }
+    }
+}
