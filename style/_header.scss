@@ -1,0 +1,42 @@
+#menu {
+    display: grid;
+    text-align: center;
+    grid-column: calc($width - 30px);
+    background-color: darken($color2, $amount: 10%);
+
+    @for $i from 1 to 9 {
+        #item-#{$i} {
+            grid-column-start: calc($i + 2);
+            grid-column-end: calc($i + 3);
+            padding-top: 10px;
+            color: $color4;
+            border-right: $border;
+            height: $height;
+            font-size: calc($font-size - 3px);
+
+            &:hover {
+                cursor: pointer;
+                background-color: $color4;
+                color: darken($color2, $amount: 10%);
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+#topic {
+    background-color: $color4;
+    font-variant: small-caps;
+    text-align: center;
+    padding: calc($height/2) 0 $height 0;
+
+    h1 {
+        margin: 0;
+        font-size: calc($font-size + 50px);
+    }
+
+    h3 {
+        margin: 0;
+        color: darken($color2, $amount: 15%);
+    }
+}

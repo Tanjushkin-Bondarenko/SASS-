@@ -1,0 +1,174 @@
+#menu {
+  display: grid;
+  text-align: center;
+  grid-column: 70px;
+  background-color: #161e55;
+}
+#menu #item-1 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  padding-top: 10px;
+  color: rgb(218, 222, 249);
+  border-right: 1px solid rgb(218, 222, 249);
+  height: 50px;
+  font-size: 19px;
+}
+#menu #item-1:hover {
+  cursor: pointer;
+  background-color: rgb(218, 222, 249);
+  color: #161e55;
+  font-weight: bolder;
+}
+#menu #item-2 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  padding-top: 10px;
+  color: rgb(218, 222, 249);
+  border-right: 1px solid rgb(218, 222, 249);
+  height: 50px;
+  font-size: 19px;
+}
+#menu #item-2:hover {
+  cursor: pointer;
+  background-color: rgb(218, 222, 249);
+  color: #161e55;
+  font-weight: bolder;
+}
+#menu #item-3 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  padding-top: 10px;
+  color: rgb(218, 222, 249);
+  border-right: 1px solid rgb(218, 222, 249);
+  height: 50px;
+  font-size: 19px;
+}
+#menu #item-3:hover {
+  cursor: pointer;
+  background-color: rgb(218, 222, 249);
+  color: #161e55;
+  font-weight: bolder;
+}
+#menu #item-4 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  padding-top: 10px;
+  color: rgb(218, 222, 249);
+  border-right: 1px solid rgb(218, 222, 249);
+  height: 50px;
+  font-size: 19px;
+}
+#menu #item-4:hover {
+  cursor: pointer;
+  background-color: rgb(218, 222, 249);
+  color: #161e55;
+  font-weight: bolder;
+}
+#menu #item-5 {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  padding-top: 10px;
+  color: rgb(218, 222, 249);
+  border-right: 1px solid rgb(218, 222, 249);
+  height: 50px;
+  font-size: 19px;
+}
+#menu #item-5:hover {
+  cursor: pointer;
+  background-color: rgb(218, 222, 249);
+  color: #161e55;
+  font-weight: bolder;
+}
+#menu #item-6 {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  padding-top: 10px;
+  color: rgb(218, 222, 249);
+  border-right: 1px solid rgb(218, 222, 249);
+  height: 50px;
+  font-size: 19px;
+}
+#menu #item-6:hover {
+  cursor: pointer;
+  background-color: rgb(218, 222, 249);
+  color: #161e55;
+  font-weight: bolder;
+}
+#menu #item-7 {
+  grid-column-start: 9;
+  grid-column-end: 10;
+  padding-top: 10px;
+  color: rgb(218, 222, 249);
+  border-right: 1px solid rgb(218, 222, 249);
+  height: 50px;
+  font-size: 19px;
+}
+#menu #item-7:hover {
+  cursor: pointer;
+  background-color: rgb(218, 222, 249);
+  color: #161e55;
+  font-weight: bolder;
+}
+#menu #item-8 {
+  grid-column-start: 10;
+  grid-column-end: 11;
+  padding-top: 10px;
+  color: rgb(218, 222, 249);
+  border-right: 1px solid rgb(218, 222, 249);
+  height: 50px;
+  font-size: 19px;
+}
+#menu #item-8:hover {
+  cursor: pointer;
+  background-color: rgb(218, 222, 249);
+  color: #161e55;
+  font-weight: bolder;
+}
+
+#topic {
+  background-color: rgb(218, 222, 249);
+  font-variant: small-caps;
+  text-align: center;
+  padding: 25px 0 50px 0;
+}
+#topic h1 {
+  margin: 0;
+  font-size: 72px;
+}
+#topic h3 {
+  margin: 0;
+  color: #111740;
+}
+
+body {
+  margin: 0;
+}
+
+#main_container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  border-right: 10px solid rgb(218, 222, 249);
+  border-left: 10px solid rgb(218, 222, 249);
+  margin: 0 10% 0 10%;
+}
+
+.show {
+  width: 20%;
+  margin: 10px 40% 0 40%;
+  height: 33.3333333333px;
+  font-size: 20px;
+  background-color: rgb(218, 222, 249);
+  color: #161e55;
+  border: 1px solid rgb(218, 222, 249);
+}
+.show:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+@import 'variebles';
+@import 'header';
+
+body {
+    margin: 0;
+}
+
+#main_container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    border-right: 10px solid $color4;
+    border-left: 10px solid $color4; //змінити або колір на світліший або фон
+    margin: 0 10% 0 10%;
+}
+
+.show {
+    width: 20%;
+    margin: 10px 40% 0 40%;
+    height: calc($height /1.5);
+    font-size: calc($font-size - 2px);
+    background-color: $color4;
+    color: darken($color2, $amount: 10%);
+    border: $border;
+
+    &:hover {
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
+footer {
+    width: 100%;
+
+}
