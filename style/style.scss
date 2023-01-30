@@ -1,22 +1,11 @@
 @import 'variebles';
+@import 'main';
 @import 'header';
 @import 'aside';
 @import 'article';
 @import 'nav';
-
-body {
-    margin: 0;
-}
-
-#main_container {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    border-right: 10px solid $color4;
-    border-left: 10px solid $color4; //змінити або колір на світліший або фон
-    margin: 0 10% 0 10%;
-}
-
+@import 'footer';
+@import 'mediascrin';
 .show {
     width: 20%;
     margin: 10px 40% 0 40%;
@@ -30,9 +19,4 @@ body {
         cursor: pointer;
         font-weight: bold;
     }
-}
-
-footer {
-    width: 100%;
-
 }

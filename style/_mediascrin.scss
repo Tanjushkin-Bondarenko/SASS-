@@ -1,0 +1,235 @@
+@media screen and(max-width: 1400px) {
+    main{
+        width: 92%;
+        justify-content: space-around;
+        padding: 0 4% 0 4%;
+
+    article {
+        width: 45%;
+        @each $item in first,
+        second,
+        third,
+        fourth,
+        fifth,
+        sixth {
+            .topic_#{$item} {
+                font-size: calc($font-size + 2px);
+            }
+            .article_#{$item} {
+                font-size: calc($font-size - 4px);
+            }
+        }
+    }
+    aside {
+        width: 30%;
+        @for $i from 1 to 4 {
+            .aside_topic#{$i} {
+                font-size: calc($font-size + 2px);
+            }
+            .aside_img#{$i} {
+                height: auto;
+                max-width: calc($width *2.5);
+            }
+        }
+    }
+    nav {
+        width: 23%;
+        .foto {
+            width: calc($width * 2.3);
+            height: auto;
+        }
+        .topic_current_new {
+            font-size: calc($font-size - 3px)
+        }
+    }
+    }
+    
+    footer {
+        .footer_menu {
+            padding: 0;
+            justify-content: space-around;
+            column-gap: 5px;
+            row-gap: 12px;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(7, 25px);
+        }
+    }
+}
+
+@media screen and(max-width: 1000px) {
+    main {
+        width: 98%;
+        justify-content: space-around;
+        padding: 0 1% 0 1%;
+    
+    article {
+        width: 38%;
+        @each $item in first,
+        second,
+        third,
+        fourth,
+        fifth,
+        sixth {
+            .topic_#{$item} {
+                font-size: $font-size;
+            }
+            .article_#{$item} {
+                span {
+                    font-size: calc($font-size - 4px);
+                }
+            }
+            .subtitle_#{$item} {
+                font-size: calc($font-size - 7px);
+            }
+        }
+    }
+    aside {
+        width: 30%;
+        @for $i from 1 to 4 {
+            .aside_topic#{$i} {
+                font-size: $font-size;
+                padding-bottom: calc($height /3);
+            }
+            .subtitle#{$i} {
+                padding-top: calc($height /3);
+                font-size: calc($font-size - 4px);
+            }
+            .aside_img#{$i} {
+                height: auto;
+                width: 260px;
+            }
+        }
+    }
+
+    nav {
+        width: 30%;
+        .foto {
+            width: calc($width *2.5);
+            height: auto;
+        }
+        .topic_current_new {
+            font-size: calc($font-size - 3px)
+        }
+    }}
+    footer {
+        .footer_menu {
+            padding: 0;
+            justify-content: center;
+            -moz-column-gap: 2px;
+            column-gap: 60px;
+            row-gap: 10px;
+            grid-template-columns: repeat(4, 150px);
+            grid-template-rows: repeat(7, 25px);
+        }
+    }
+}
+
+@media screen and(max-width: 900px) {
+    main {
+        width: 98%;
+        justify-content: space-around;
+        padding: 0 1% 0 1%;
+    
+    article {
+        width: 40%;
+        @each $item in first,
+        second,
+        third,
+        fourth,
+        fifth,
+        sixth {
+            .topic_#{$item} {
+                font-size: $font-size;
+            }
+            .article_#{$item} {
+                span {
+                    font-size: calc($font-size - 4px);
+                }
+            }
+            .subtitle_#{$item} {
+                font-size: calc($font-size - 6px);
+            }
+        }
+    }
+    aside {
+        display: none;
+    }
+    nav {
+        width: 40%;
+        .topic_current_new {
+            font-size: calc($font-size - 3px)
+        }
+        .foto {
+            width: calc($width *3);
+            height: auto;
+        }
+    }}
+    footer {
+        .footer_menu {
+            display: none;
+        }
+    }
+}
+
+@media screen and(max-width: 700px) {
+    header {
+        #menu {
+            grid-column: calc($width - 10px);
+            @for $i from 1 to 9 {
+                #item-#{$i} {
+                    padding-top: 5px;
+                    font-size: calc($font-size - 7px);
+                }
+            }
+        }
+        #topic {
+            h1 {
+                font-size: calc($font-size + 10px);
+            }
+        }
+    }
+    main {
+        width: 90%;
+        padding: 0 5% 0 5%;
+        flex-direction: column;
+     
+    article {
+        width: 80%;
+        @each $item in first,
+        second,
+        third,
+        fourth,
+        fifth,
+        sixth {
+            .topic_#{$item} {
+                font-size: calc($font-size + 3px);
+            }
+            .article_#{$item} {
+                span {
+                    font-size: calc($font-size - 4px);
+                }
+            }
+            .subtitle_#{$item} {
+                font-size: calc($font-size - 6px);
+            }
+        }
+    }
+    aside {
+        display: none;
+    }
+    nav {
+        width: 80%;
+        .topic_current_new {
+            font-size: calc($font-size + 3px);
+        }
+        .foto {
+            width: calc($width * 4);
+            height: auto;
+        }
+    }}
+    footer {
+        .footer_menu {
+            display: none;
+        }
+    }
+}

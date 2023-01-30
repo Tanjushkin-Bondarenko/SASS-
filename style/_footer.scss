@@ -1,0 +1,55 @@
+#back_to_top {
+    height: $height;
+    background-color: darken($color2, $amount: 10%);
+    color: $color4;
+    font-variant: small-caps;
+    font-size: calc($font-size - 2px);
+    padding-left: 10px;
+    &:hover{
+        cursor: pointer;
+        color: darken($color4, $amount: 19%)
+    }
+}
+.fa-sharp {
+    margin: 2px 5px 0 2px;
+}
+.footer_menu {
+    padding: 10px 10% 10px 10%;
+    display: grid;
+    grid-auto-flow: column;
+     background-color: darken($color2, $amount: 14%);
+    row-gap: 10px;
+    column-gap: 90px;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(7, 25px);
+    @for $i from 1 to 32 {
+        .footer_menu-point#{$i} {
+            width: calc($width *2);
+            color: $color4;
+         &:hover{
+            cursor: pointer;
+             color: darken($color4, $amount: 19%);
+         }
+        }
+    }
+    @for $i from 1 to 6{
+.footer_menu-point#{$i}{
+grid-column-start: 1;
+grid-column-end: 2;
+}  }
+      @for $i from 8 to 15 {
+          .footer_menu-point#{$i} {
+              grid-column-start: 2;
+              grid-column-end: 3;
+          }}
+            @for $i from 15 to 24 {
+                .footer_menu-point#{$i} {
+                    grid-column-start: 3;
+                    grid-column-end: 4;
+                }}
+                  @for $i from 24 to 32 {
+                      .footer_menu-point#{$i} {
+                          grid-column-start: 4;
+                          grid-column-end: 5;
+                      }}
+}

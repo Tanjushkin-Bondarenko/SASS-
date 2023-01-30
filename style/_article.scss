@@ -13,31 +13,26 @@ article {
             font-size: $font-size;
             color: darken($color5, $amount: 60%)
         }
-
         .topic_#{$item} {
             padding-bottom: calc($height / 3);
             font-size: calc($font-size + 10px);
             font-weight: bold;
             color: darken($color2, $amount: 10%)
         }
-
         .subtitle_#{$item} {
             font-size: calc($font-size - 2px);
             padding-bottom: calc($height / 3);
             color: darken($color5, $amount: 30%);
             font-variant: small-caps;
         }
-
         .topic_#{$item}:hover {
             cursor: pointer;
             color: $color1;
         }
     }
-
     .text:hover {
         cursor: pointer;
     }
-
     #world-stricle {
         margin-top: calc($height /2);
         width: 100%;
